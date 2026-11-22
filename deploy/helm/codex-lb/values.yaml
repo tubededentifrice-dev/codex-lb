@@ -421,6 +421,9 @@ tracing:
 postgresql:
   # @param postgresql.enabled Deploy Bitnami PostgreSQL sub-chart (set false for external DB)
   enabled: true
+  image:
+    # @param postgresql.image.digest PostgreSQL 18.7.0 image digest for the bundled database
+    digest: sha256:2b159820ab3aee5655746887aae740402153ef937968370ff4e03461822b4ba9
   auth:
     # @param postgresql.auth.username PostgreSQL username
     username: codexlb
